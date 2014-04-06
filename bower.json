@@ -1,0 +1,13 @@
+{
+  "name": "cdh-transport",
+  "version": "0.0.0",
+  "homepage": "https://github.com/clintonhalpin/cdh-transport",
+  "authors": [
+    "clintonhalpin <clintonhalpin@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "normalize-css": "~3.0.1"
+  }
+}
