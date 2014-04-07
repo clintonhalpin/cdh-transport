@@ -1,10 +1,14 @@
 body {
 	font-size: 16px;
 	line-height: 2em;
+	width: 100%;
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 21px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #444545;
 }
 
 h2 {
@@ -15,28 +19,42 @@ h3 {
 	font-size: 1.5em;
 }
 
+p {
+	font-size: 14px;
+	line-height: 150%;
+	color: #444444;
+}
+
 h1,h2,h3,p,ul {
 	margin: 0;
 	padding: 0;
 }
 
 ul {
-	list-style-type: none;
+	list-style-type: disc;
 	margin: 0;
 	padding: 0;
+	list-style-position: inside;
+
 }
 
 li {
-	padding: 8px 0;
-}
-
-li ul li {
-	padding: 3px 0;
-	color: #666;
+	color: #8E8A8A;
+	line-height: 125%;
+	padding: 5px 0;
 }
 
 .section {
 	margin: 20px;
+}
+
+article {
+	background: #FFF;
+	border-radius: 6px;
+	border: 1px solid #CDCCCC;
+	padding: 20px;
+	margin: 0 auto;
+	max-width: 500px;
 }
 
 .section--brand {
@@ -58,6 +76,7 @@ nav {
 	top: 0;
 	left: 0;
 	right: 0;
+	height: 50px;
 }
 
 nav ul {
@@ -67,15 +86,19 @@ nav ul {
 }
 
 nav ul li {
-	float: left
+	text-align: center;
 }
 
 nav ul li:first-child {
 	font-weight: 900;
+	width: 100%;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: center;
 }
 
-nav ul li:last-child {
-	float: right
+nav ul li img {
+	width: 100px;
 }
 
 nav ul li a {
@@ -85,24 +108,93 @@ nav ul li a {
 	color: #666666;
 }
 
-.btn {
-	background: #1B325D;
-	padding: 12px 30px;
-	border-radius: 6px;
-	color: #FFF;
-	display: inline-block;
-	margin: 10px 0 10px 0;
-	text-decoration: none;
+.header {
+	color: #AC1322;
+	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
-.photo {
-	width: 200px;
-	height: 200px;
+.header--black {
+	color: #444444;
+	margin: 20px 0;
+}
+
+.btn {
+	background: #AC1322;
+	padding: 12px 30px;
+	border-radius: 3px;
+	color: #FFF;
+	display: block;
+	margin: 20px 0 0px 0;
+	text-decoration: none;
+	text-align: center;
+}
+
+.name-card .photo {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 	background: #666;
 	float: left;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
-.small {
-	font-size: 14px;
+.name-card h1 {
+	line-height: 1em;
+}
+
+.name-card h1 span {
+	color: #A7A9AC;
+	font-size: 18px;
+	text-transform: none;
+	font-weight: 100;
+}
+
+.name-card p {
+	display: block;
+	margin-top: 20px;
+}
+
+.section--jobs {
+	margin: 0;
+	padding: 20px;
+	background: #EEF0F0;
+	border-top: 1px solid #D9DBDC;
+	border-bottom: 1px solid #D9DBDC;
+}
+
+.section--jobs .salary {
+	margin-bottom: 20px;
+}
+
+.section--jobs .small {
+	font-size: 12px;
+}
+
+.section--footer {
+	background: #B8C1CD;
+	color: #1A3963;
+	margin: 0;
+}
+
+.section--footer ul {
+	list-style-type: none;
+}
+
+.section--footer li {
+	color: #1B325D;
+}
+
+.section--footer article {
+	background: transparent;
+	border: 0;
+}
+
+.section--footer p {
+	color: #1B325D;
+}
+
+.section--footer img {
+	width: 14px;
+	margin-right: 10px;
 }
