@@ -1,7 +1,13 @@
 body {
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 2em;
 	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 h1 {
@@ -21,11 +27,11 @@ h3 {
 
 p {
 	font-size: 14px;
-	line-height: 150%;
+	line-height: 135%;
 	color: #444444;
 }
 
-h1,h2,h3,p,ul {
+h1,h2,h3,h4,p,ul {
 	margin: 0;
 	padding: 0;
 }
@@ -34,8 +40,6 @@ ul {
 	list-style-type: disc;
 	margin: 0;
 	padding: 0;
-	list-style-position: inside;
-
 }
 
 li {
@@ -50,7 +54,7 @@ li {
 
 article {
 	background: #FFF;
-	border-radius: 6px;
+	border-radius: 3px;
 	border: 1px solid #CDCCCC;
 	padding: 20px;
 	margin: 0 auto;
@@ -111,12 +115,15 @@ nav ul li a {
 .header {
 	color: #AC1322;
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin: 20px 0 15px 0;
 }
 
-.header--black {
-	color: #444444;
-	margin: 20px 0;
+.header:nth-of-type(1) {
+	margin-top: 0;
+}
+
+.header--requirements {
+	margin: 20px 0 10px 0;
 }
 
 .btn {
@@ -128,6 +135,14 @@ nav ul li a {
 	margin: 20px 0 0px 0;
 	text-decoration: none;
 	text-align: center;
+}
+
+.btn:hover {
+	background: #7E101B;
+}
+
+.btn:active {
+	background: #A31220;
 }
 
 .name-card .photo {
@@ -165,20 +180,25 @@ nav ul li a {
 
 .section--jobs .salary {
 	margin-bottom: 20px;
+	font-weight: 900;
 }
 
 .section--jobs .small {
 	font-size: 12px;
+	margin-bottom: 35px;
+	margin-left: 18px;
 }
 
 .section--footer {
 	background: #B8C1CD;
 	color: #1A3963;
 	margin: 0;
+	font-size: 14px;
 }
 
 .section--footer ul {
 	list-style-type: none;
+	margin-top: 10px;
 }
 
 .section--footer li {
@@ -198,3 +218,8 @@ nav ul li a {
 	width: 14px;
 	margin-right: 10px;
 }
+
+
+/** {
+	border: 1px solid #CCCCCC;
+}*/
